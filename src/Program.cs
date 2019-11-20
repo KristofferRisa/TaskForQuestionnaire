@@ -15,7 +15,7 @@ namespace TaskForQuestionnaireExample
 
         private static void GenerateTaskForQuestionnaireExample()
         {
-            string name = "Taks-example";
+            string name = "HNTaskForQuestionnaire";
             DateTimeOffset reminder = DateTimeOffset.UtcNow.AddDays(12);
             DateTimeOffset deadline = DateTimeOffset.UtcNow.AddDays(14);
             DateTimeOffset validTo = DateTimeOffset.UtcNow.AddDays(18).Date;
@@ -275,6 +275,7 @@ namespace TaskForQuestionnaireExample
                         },
                         Value = new FhirBoolean(true)
                     },
+                    // Context
                     new Task.ParameterComponent
                     {
                         Type = new CodeableConcept
